@@ -196,8 +196,6 @@ cask "sf-symbols"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Rust-based terminal
-cask "warp"
 go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
 
