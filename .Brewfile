@@ -180,7 +180,6 @@ cask "jump-desktop"
 # Remote desktop app
 cask "jump-desktop-connect"
 # Full TeX Live distribution without GUI applications
-cask "mactex-no-gui"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
 # Browse, manage, inspect containers and images
