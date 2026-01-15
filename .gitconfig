@@ -1,0 +1,7 @@
+[user]
+	name = Rodrigo Soares
+	email = rodrigo.soares@justeattakeaway.com
+[core]
+	autocrlf = input
+[push]
+	autoSetupRemote = true
