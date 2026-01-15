@@ -165,9 +165,9 @@ cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
 # This cask follows releases from https://github.com/dotnet/core/tree/master
-cask "dotnet-sdk8"
+cask "isen-ng/dotnet-sdk-versions/dotnet-sdk8"
 # This cask follows releases from https://github.com/dotnet/core/tree/master
-cask "dotnet-sdk8-0-400"
+cask "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-400"
 cask "font-hack-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-sf-mono"
