@@ -8,7 +8,6 @@ tap "jesseduffield/lazygit"
 tap "localstack/tap"
 tap "nikitabobko/tap"
 tap "shivammathur/php"
-
 # Official Amazon AWS command-line interface
 brew "awscli"
 # C parser in Python
@@ -29,7 +28,6 @@ brew "brew-php-switcher"
 brew "btop"
 # Core application library for C
 brew "glib"
-
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -149,12 +147,10 @@ brew "derailed/k9s/k9s"
 brew "hudochenkov/sshpass/sshpass"
 # Localstack cli packaged using pyinstaller
 brew "localstack/tap/localstack-cli"
-
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Memory training application
 cask "anki"
-
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Universal database tool and SQL client
@@ -185,10 +181,12 @@ cask "jump-desktop"
 cask "jump-desktop-connect"
 # Full TeX Live distribution without GUI applications
 cask "mactex-no-gui"
-
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
 # Browse, manage, inspect containers and images
 cask "podman-desktop"
-
+# HTTP debugging proxy
+cask "proxyman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -199,6 +197,8 @@ cask "sf-symbols"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-
+# Rust-based terminal
+cask "warp"
 go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
+
