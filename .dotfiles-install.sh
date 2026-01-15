@@ -9,9 +9,9 @@ set -e
 #   OR
 #   bash .dotfiles-install.sh
 
-DOTFILES_REPO="git@github.com:RodrigoCSoares/dotfiles.git"
-NVIM_REPO="git@github.com:RodrigoCSoares/nvim-config.git"
-SCRIPTS_REPO="git@github.com:RodrigoCSoares/scripts.git"
+DOTFILES_REPO="https://github.com/RodrigoCSoares/dotfiles.git"
+NVIM_REPO="https://github.com/RodrigoCSoares/nvim-config.git"
+SCRIPTS_REPO="https://github.com/RodrigoCSoares/scripts.git"
 
 echo "==> Starting dotfiles installation..."
 
