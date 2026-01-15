@@ -11,6 +11,7 @@ set -e
 
 DOTFILES_REPO="git@github.com:RodrigoCSoares/dotfiles.git"
 NVIM_REPO="git@github.com:RodrigoCSoares/nvim-config.git"
+SCRIPTS_REPO="git@github.com:RodrigoCSoares/scripts.git"
 
 echo "==> Starting dotfiles installation..."
 
@@ -87,6 +88,13 @@ if [ ! -d "$HOME/.config/nvim" ]; then
     echo "==> Cloning neovim config..."
     mkdir -p "$HOME/.config"
     git clone "$NVIM_REPO" "$HOME/.config/nvim"
+fi
+
+# Clone personal scripts
+if [ ! -d "$HOME/personal/scripts" ]; then
+    echo "==> Cloning personal scripts..."
+    mkdir -p "$HOME/personal"
+    git clone "$SCRIPTS_REPO" "$HOME/personal/scripts"
 fi
 
 echo ""
