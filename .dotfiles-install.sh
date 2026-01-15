@@ -60,7 +60,7 @@ dotfiles config --local status.showUntrackedFiles no
 # Install Homebrew packages
 if [ -f "$HOME/.Brewfile" ]; then
     echo "==> Installing Homebrew packages from Brewfile..."
-    brew bundle --file="$HOME/.Brewfile"
+    brew bundle --file="$HOME/.Brewfile" --verbose
 fi
 
 # Install oh-my-zsh if not present
