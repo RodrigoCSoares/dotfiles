@@ -17,6 +17,8 @@ My personal development environment configuration, managed with a [bare git repo
 
 Neovim config is in a separate repo: [nvim-config](https://github.com/RodrigoCSoares/nvim-config)
 
+Personal scripts are in a separate repo: [scripts](https://github.com/RodrigoCSoares/scripts)
+
 ## Fresh Machine Setup
 
 ```bash
@@ -30,7 +32,8 @@ This will:
 4. Checkout all config files to their proper locations
 5. Install all Homebrew packages from `.Brewfile`
 6. Install oh-my-zsh with powerlevel10k theme and zsh-autosuggestions
-7. Clone neovim config
+7. Clone neovim config to `~/.config/nvim`
+8. Clone personal scripts to `~/personal/scripts`
 
 After installation, create `~/.secrets` for API tokens:
 ```bash
