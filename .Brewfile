@@ -68,8 +68,6 @@ brew "gleam"
 brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Get events and tasks from the macOS calendar database
-brew "ical-buddy"
 # Tool to report network interface bandwidth
 brew "ifstat"
 # Istio configuration command-line utility
