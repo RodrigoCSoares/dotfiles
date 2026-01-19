@@ -48,7 +48,7 @@ brew "docker"
 brew "docker-compose"
 # Text processing system for reStructuredText
 brew "docutils"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
@@ -68,6 +68,8 @@ brew "gleam"
 brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Get events and tasks from the macOS calendar database
+brew "ical-buddy"
 # Tool to report network interface bandwidth
 brew "ifstat"
 # Istio configuration command-line utility
