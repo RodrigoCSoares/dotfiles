@@ -4,6 +4,7 @@ tap "derailed/k9s"
 tap "domt4/autoupdate"
 tap "hudochenkov/sshpass"
 tap "isen-ng/dotnet-sdk-versions"
+tap "jesseduffield/lazydocker"
 tap "jesseduffield/lazygit"
 tap "localstack/tap"
 tap "nikitabobko/tap"
@@ -145,6 +146,8 @@ brew "cirruslabs/cli/tart"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 brew "hudochenkov/sshpass/sshpass"
+# A simple terminal UI for docker, written in Go
+brew "jesseduffield/lazydocker/lazydocker"
 # Localstack cli packaged using pyinstaller
 brew "localstack/tap/localstack-cli"
 # Password manager that keeps all passwords secure behind one password
