@@ -2,6 +2,7 @@ tap "ankitpokhrel/jira-cli"
 tap "cirruslabs/cli"
 tap "derailed/k9s"
 tap "domt4/autoupdate"
+tap "hashicorp/tap"
 tap "hudochenkov/sshpass"
 tap "isen-ng/dotnet-sdk-versions"
 tap "jesseduffield/lazydocker"
@@ -145,6 +146,8 @@ brew "ankitpokhrel/jira-cli/jira-cli"
 brew "cirruslabs/cli/tart"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# Vault
+brew "hashicorp/tap/vault"
 brew "hudochenkov/sshpass/sshpass"
 # A simple terminal UI for docker, written in Go
 brew "jesseduffield/lazydocker/lazydocker"

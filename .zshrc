@@ -133,3 +133,18 @@ export PATH="$PATH:/Users/rodrigo.soares/.local/bin"
 
 # Dotfiles management (bare git repo)
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Vault CLI multi-environment configuration (URLs stored in ~/.secrets)
+vault-env() {
+  case "$1" in
+    qa2)  export VAULT_ADDR="$VAULT_URL_QA2" ;;
+    qa3)  export VAULT_ADDR="$VAULT_URL_QA3" ;;
+    stg5) export VAULT_ADDR="$VAULT_URL_STG5" ;;
+    stg6) export VAULT_ADDR="$VAULT_URL_STG6" ;;
+    prd5) export VAULT_ADDR="$VAULT_URL_PRD5" ;;
+    prd6) export VAULT_ADDR="$VAULT_URL_PRD6" ;;
+    "")   echo "Current VAULT_ADDR: ${VAULT_ADDR:-<not set>}" ;;
+    *)    echo "Usage: vault-env [qa2|qa3|stg5|stg6|prd5|prd6]"; return 1 ;;
+  esac
+  [[ -n "$1" ]] && echo "VAULT_ADDR set to: $VAULT_ADDR"
+}
