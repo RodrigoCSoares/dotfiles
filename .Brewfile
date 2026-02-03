@@ -1,4 +1,5 @@
 tap "ankitpokhrel/jira-cli"
+tap "anomalyco/tap"
 tap "cirruslabs/cli"
 tap "derailed/k9s"
 tap "domt4/autoupdate"
@@ -106,10 +107,6 @@ brew "neovim"
 brew "nowplaying-cli"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# AI coding agent, built for the terminal
-brew "opencode"
 # SDK for building Kubernetes applications
 brew "operator-sdk"
 # General-purpose scripting language
@@ -130,6 +127,8 @@ brew "pyenv"
 brew "qemu"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Microsoft SQL Server command-line interface
 brew "sqlcmd"
 # Change macOS audio source from the command-line
@@ -142,6 +141,8 @@ brew "tree"
 brew "yarn"
 # Feature-rich interactive Jira command-line
 brew "ankitpokhrel/jira-cli/jira-cli"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode"
 # Run macOS and Linux VMs on Apple Hardware
 brew "cirruslabs/cli/tart"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -203,5 +204,4 @@ cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 go "github.com/yayolande/go-template-lsp"
-cargo "openapi-tui"
 
