@@ -55,14 +55,12 @@ brew "docutils"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Run gitlab pipelines locally as shell executor or docker executor
 brew "gitlab-ci-local"
 # Statically typed language for the Erlang VM
