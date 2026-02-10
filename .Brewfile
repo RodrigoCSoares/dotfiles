@@ -197,6 +197,8 @@ cask "raycast"
 cask "rectangle"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# AI image upscaler
+cask "upscayl"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
