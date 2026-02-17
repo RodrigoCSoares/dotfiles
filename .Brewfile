@@ -189,6 +189,8 @@ cask "jump-desktop-connect"
 cask "mitmproxy"
 # Browse, manage, inspect containers and images
 cask "podman-desktop"
+# Used to access context-specific actions when text is selected
+cask "popclip"
 # HTTP debugging proxy
 cask "proxyman"
 # Control your tools with a few keystrokes
