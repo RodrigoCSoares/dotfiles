@@ -207,4 +207,3 @@ cask "visual-studio-code"
 cask "vlc"
 go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
-
