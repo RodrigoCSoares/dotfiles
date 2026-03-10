@@ -1,6 +1,7 @@
 tap "ankitpokhrel/jira-cli"
 tap "anomalyco/tap"
 tap "cirruslabs/cli"
+tap "datadog-labs/pack"
 tap "derailed/k9s"
 tap "domt4/autoupdate"
 tap "hashicorp/tap"
@@ -143,6 +144,8 @@ brew "ankitpokhrel/jira-cli/jira-cli"
 brew "anomalyco/tap/opencode"
 # Run macOS and Linux VMs on Apple Hardware
 brew "cirruslabs/cli/tart"
+# Go-based command-line wrapper for easy interaction with Datadog APIs
+brew "datadog-labs/pack/pup"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 # Vault
@@ -178,8 +181,6 @@ cask "ghostty"
 cask "iina"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Menu bar manager
-cask "jordanbaird-ice"
 # Remote desktop application
 cask "jump-desktop"
 # Remote desktop app
@@ -199,6 +200,8 @@ cask "raycast"
 cask "rectangle"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Menu bar manager
+cask "thaw"
 # AI image upscaler
 cask "upscayl"
 # Open-source code editor

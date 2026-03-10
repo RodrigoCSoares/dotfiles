@@ -4,19 +4,24 @@
     "financecore": {
       "type": "remote",
       "url": "http://localhost:5001/mcp",
-      "enabled": true,
+      "enabled": false,
       "headers": {
         "X-Tenant": "ie"
       }
     },
     "calendar": {
       "type": "local",
-      "command": ["/Users/rodrigo.soares/personal/mcp-macos-calendar/.build/debug/MCPMacOSCalendar", "--transport", "stdio"],
+      "command": ["/Users/rodrigo.soares/personal/projects/mcp-macos-calendar/.build/debug/MCPMacOSCalendar", "--transport", "stdio"],
       "enabled": true
     },
     "atlassian": {
       "type": "remote",
       "url": "https://mcp.atlassian.com/v1/mcp",
+      "enabled": true
+    },
+    "things3": {
+      "type": "local",
+      "command": ["/Users/rodrigo.soares/personal/projects/mcp-things3/.build/debug/MCPThings3"],
       "enabled": true
     }
   },
