@@ -23,6 +23,14 @@
       "type": "local",
       "command": ["/Users/rodrigo.soares/personal/projects/mcp-things3/.build/debug/MCPThings3"],
       "enabled": true
+    },
+    "anki": {
+      "type": "local",
+      "command": ["npx", "-y", "@ankimcp/anki-mcp-server", "--stdio"],
+      "environment": {
+        "ANKI_CONNECT_URL": "http://localhost:8765"
+      },
+      "enabled": true
     }
   },
   "permission": {
