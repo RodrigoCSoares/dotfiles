@@ -68,6 +68,8 @@ brew "gitlab-ci-local"
 brew "gleam"
 # Kubernetes package manager
 brew "helm"
+# Deploy Kubernetes Helm Charts
+brew "helmfile"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Tool to report network interface bandwidth
