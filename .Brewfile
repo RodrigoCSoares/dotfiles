@@ -211,4 +211,5 @@ cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 go "github.com/yayolande/go-template-lsp"
+cargo "openapi-tui"
 
