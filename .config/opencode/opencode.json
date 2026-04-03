@@ -11,22 +11,33 @@
     },
     "calendar": {
       "type": "local",
-      "command": ["/Users/rodrigo.soares/personal/projects/mcp-macos-calendar/.build/debug/MCPMacOSCalendar", "--transport", "stdio"],
-      "enabled": true
+      "command": [
+        "/Users/rodrigo.soares/personal/projects/mcp-macos-calendar/.build/debug/MCPMacOSCalendar",
+        "--transport",
+        "stdio"
+      ],
+      "enabled": false 
     },
     "atlassian": {
       "type": "remote",
       "url": "https://mcp.atlassian.com/v1/mcp",
-      "enabled": true
+      "enabled": false 
     },
     "things3": {
       "type": "local",
-      "command": ["/Users/rodrigo.soares/personal/projects/mcp-things3/.build/debug/MCPThings3"],
-      "enabled": true
+      "command": [
+        "/Users/rodrigo.soares/personal/projects/mcp-things3/.build/debug/MCPThings3"
+      ],
+      "enabled": false 
     },
     "anki": {
       "type": "local",
-      "command": ["npx", "-y", "@ankimcp/anki-mcp-server", "--stdio"],
+      "command": [
+        "npx",
+        "-y",
+        "@ankimcp/anki-mcp-server",
+        "--stdio"
+      ],
       "environment": {
         "ANKI_CONNECT_URL": "http://localhost:8765"
       },
@@ -43,8 +54,18 @@
       "disabled": true
     },
     "roslyn": {
-      "command": ["/Users/rodrigo.soares/.local/share/nvim/mason/bin/roslyn", "--logLevel=Information", "--extensionLogDirectory=/tmp/roslyn-logs", "--stdio"],
-      "extensions": [".cs"]
+      "command": [
+        "/Users/rodrigo.soares/.local/share/nvim/mason/bin/roslyn",
+        "--logLevel=Information",
+        "--extensionLogDirectory=/tmp/roslyn-logs",
+        "--stdio"
+      ],
+      "extensions": [
+        ".cs"
+      ]
     }
-  }
+  },
+  "plugin": [
+    "oh-my-openagent@latest"
+  ]
 }
