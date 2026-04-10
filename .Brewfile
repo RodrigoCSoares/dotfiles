@@ -126,6 +126,8 @@ brew "postgresql@14"
 brew "pyenv"
 # Generic machine emulator and virtualizer
 brew "qemu"
+# Database management TUI for PostgreSQL/MySQL/SQLite
+brew "rainfrog", link: false
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Search tool like grep and The Silver Searcher

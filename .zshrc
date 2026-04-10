@@ -117,6 +117,9 @@ export EDITOR='nvim'
 # Roc package
 export PATH=$PATH:~/personal/roc/roc_nightly-macos_apple_silicon-2024-10-07-6cb250176f5
 
+# Rainfrog config directory
+export RAINFROG_CONFIG="$HOME/.config/rainfrog"
+
 # Load secrets (API tokens, etc.) - not tracked in dotfiles
 [[ -f ~/.secrets ]] && source ~/.secrets
 
