@@ -45,9 +45,10 @@
     }
   },
   "permission": {
-    "edit": "ask",
-    "bash": "ask"
+    "edit": "allow",
+    "bash": "allow"
   },
+  "model": "github-copilot/claude-sonnet-4.6",
   "autoupdate": "notify",
   "lsp": {
     "csharp": {
@@ -65,7 +66,5 @@
       ]
     }
   },
-  "plugin": [
-    "oh-my-openagent@latest"
-  ]
+  "plugin": []
 }
