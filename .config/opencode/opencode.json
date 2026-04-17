@@ -1,6 +1,14 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
+    "bigquery": {
+      "type": "local",
+      "command": ["/Users/rodrigo.soares/bin/toolbox", "--prebuilt", "bigquery", "--stdio"],
+      "enabled" : false,
+      "environment": {
+        "BIGQUERY_PROJECT": "{file:~/.config/opencode/.secrets}"
+      }
+    },
     "financecore": {
       "type": "remote",
       "url": "http://localhost:5001/mcp",
@@ -41,7 +49,7 @@
       "environment": {
         "ANKI_CONNECT_URL": "http://localhost:8765"
       },
-      "enabled": true
+      "enabled": false 
     }
   },
   "permission": {

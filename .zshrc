@@ -154,3 +154,6 @@ vault-env() {
   esac
   [[ -n "$1" ]] && echo "VAULT_ADDR set to: $VAULT_ADDR"
 }
+
+# Refresh Google Cloud ADC token for BigQuery MCP
+export GCLOUD_ACCESS_TOKEN=$(gcloud auth application-default print-access-token 2>/dev/null)
