@@ -3,5 +3,6 @@
 	email = soares.c.rodrigo@gmail.com
 [core]
 	autocrlf = input
+	excludesFile = /Users/rodrigo.soares/.gitignore_global
 [push]
 	autoSetupRemote = true
