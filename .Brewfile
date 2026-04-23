@@ -163,6 +163,8 @@ brew "localstack/tap/localstack-cli"
 cask "1password"
 # Memory training application
 cask "anki"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Universal database tool and SQL client
