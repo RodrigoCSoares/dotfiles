@@ -102,6 +102,8 @@ brew "luarocks"
 brew "minikube"
 # Open source relational database management system
 brew "mysql"
+# Open source relational database management system
+brew "mysql-client@8.0"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Retrieves currently playing media, and simulates media actions
