@@ -76,6 +76,8 @@ brew "httpie"
 brew "ifstat"
 # Istio configuration command-line utility
 brew "istioctl"
+# Command-line interface for JFrog products
+brew "jfrog-cli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Run local Kubernetes cluster in Docker
