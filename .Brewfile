@@ -14,12 +14,6 @@ tap "nikitabobko/tap"
 tap "shivammathur/php"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Cryptographic recipes and primitives for Python
-brew "cryptography"
 # Thin wrapper around the `aws` command-line interface for use with LocalStack
 brew "awscli-local"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -32,6 +26,10 @@ brew "brew-php-switcher"
 brew "btop"
 # Core application library for C
 brew "glib"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -46,6 +44,8 @@ brew "php"
 brew "composer"
 # Utility that creates projects from templates
 brew "cookiecutter"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Isolated development environments using Docker
