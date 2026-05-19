@@ -144,6 +144,8 @@ brew "switchaudio-osx"
 brew "tre-command"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # JavaScript package manager
 brew "yarn"
 # Feature-rich interactive Jira command-line
@@ -220,4 +222,6 @@ cask "visual-studio-code"
 cask "vlc"
 go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
+npm "@github/copilot"
+npm "cclsp"
 
