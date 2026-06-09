@@ -148,23 +148,6 @@ brew "tree"
 brew "uv"
 # JavaScript package manager
 brew "yarn"
-# Feature-rich interactive Jira command-line
-brew "ankitpokhrel/jira-cli/jira-cli"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode"
-# Run macOS and Linux VMs on Apple Hardware
-brew "cirruslabs/cli/tart"
-# Go-based command-line wrapper for easy interaction with Datadog APIs
-brew "datadog-labs/pack/pup"
-# Kubernetes CLI To Manage Your Clusters In Style!
-brew "derailed/k9s/k9s"
-# Vault
-brew "hashicorp/tap/vault"
-brew "hudochenkov/sshpass/sshpass"
-# A simple terminal UI for docker, written in Go
-brew "jesseduffield/lazydocker/lazydocker"
-# Localstack cli packaged using pyinstaller
-brew "localstack/tap/localstack-cli"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Memory training application
@@ -177,10 +160,6 @@ cask "codex"
 cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
-# This cask follows releases from https://github.com/dotnet/core/tree/master
-cask "isen-ng/dotnet-sdk-versions/dotnet-sdk8"
-# This cask follows releases from https://github.com/dotnet/core/tree/master
-cask "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-400"
 cask "font-hack-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-sf-mono"
