@@ -156,4 +156,4 @@ vault-env() {
 }
 
 # Refresh Google Cloud ADC token for BigQuery MCP
-export GCLOUD_ACCESS_TOKEN=$(gcloud auth application-default print-access-token 2>/dev/null)
+# export GCLOUD_ACCESS_TOKEN=$(gcloud auth application-default print-access-token 2>/dev/null)
