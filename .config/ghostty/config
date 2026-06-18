@@ -2,4 +2,8 @@ theme = Catppuccin Mocha
 background-opacity = 0.90
 background-blur = true
 
+# Large horizontal padding to pull text away from the ultra-wide edges
+window-padding-x = 4 
+
+# Automatically distribute any leftover pixels evenly across the edges
 window-padding-balance = true
