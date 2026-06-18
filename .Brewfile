@@ -10,6 +10,7 @@ tap "isen-ng/dotnet-sdk-versions"
 tap "jesseduffield/lazydocker"
 tap "jesseduffield/lazygit"
 tap "localstack/tap"
+tap "microsoft/aspire"
 tap "nikitabobko/tap"
 tap "shivammathur/php"
 # Official Amazon AWS command-line interface
@@ -152,6 +153,8 @@ brew "yarn"
 cask "1password"
 # Memory training application
 cask "anki"
+# CLI for building observable, production-ready distributed applications
+cask "microsoft/aspire/aspire", trusted: true
 # Terminal-based AI coding assistant
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
