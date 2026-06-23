@@ -149,6 +149,8 @@ brew "tree"
 brew "uv"
 # JavaScript package manager
 brew "yarn"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Memory training application
