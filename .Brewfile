@@ -137,6 +137,8 @@ brew "rainfrog"
 brew "rename"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# CLI proxy to minimize LLM token consumption
+brew "rtk"
 # Microsoft SQL Server command-line interface
 brew "sqlcmd"
 # Change macOS audio source from the command-line
