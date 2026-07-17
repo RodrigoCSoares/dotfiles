@@ -43,6 +43,8 @@ brew "libpq"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
 # Utility that creates projects from templates
 brew "cookiecutter"
 # Cryptographic recipes and primitives for Python
@@ -167,7 +169,6 @@ cask "codex"
 cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
-cask "dotnet-sdk8"
 cask "dotnet-sdk8-0-400"
 cask "font-hack-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
