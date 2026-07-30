@@ -1,10 +1,37 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen2.5-coder:14b": {
+          "name": "qwen2.5-coder:14b",
+          "tools": "true"
+        },
+        "llama3:latest": {
+          "name": "llama3:latest"
+        },
+        "second_constantine/deepseek-coder-v2:16b": {
+          "name": "second_constantine/deepseek-coder-v2:16b",
+          "tools": true 
+        }
+      }
+    }
+  },
   "mcp": {
     "bigquery": {
       "type": "local",
-      "command": ["/Users/rodrigo.soares/bin/toolbox", "--prebuilt", "bigquery", "--stdio"],
-      "enabled" : false,
+      "command": [
+        "/Users/rodrigo.soares/bin/toolbox",
+        "--prebuilt",
+        "bigquery",
+        "--stdio"
+      ],
+      "enabled": false,
       "environment": {
         "BIGQUERY_PROJECT": "{file:~/.config/opencode/.secrets}"
       }
@@ -24,19 +51,19 @@
         "--transport",
         "stdio"
       ],
-      "enabled": false 
+      "enabled": false
     },
     "atlassian": {
       "type": "remote",
       "url": "https://mcp.atlassian.com/v1/mcp",
-      "enabled": false 
+      "enabled": false
     },
     "things3": {
       "type": "local",
       "command": [
         "/Users/rodrigo.soares/personal/projects/mcp-things3/.build/debug/MCPThings3"
       ],
-      "enabled": false 
+      "enabled": false
     },
     "anki": {
       "type": "local",
@@ -49,14 +76,14 @@
       "environment": {
         "ANKI_CONNECT_URL": "http://localhost:8765"
       },
-      "enabled": false 
+      "enabled": false
     }
   },
   "permission": {
     "edit": "allow",
     "bash": "allow"
   },
-  "model": "github-copilot/claude-sonnet-4.6",
+  "model": "ollama/qwen2.5-coder:14b",
   "autoupdate": "notify",
   "lsp": {
     "csharp": {

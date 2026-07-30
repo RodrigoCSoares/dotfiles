@@ -157,6 +157,8 @@ brew "yarn"
 brew "anomalyco/tap/opencode", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Browse, search and analyse your past AI coding sessions
+cask "agentsview"
 # Memory training application
 cask "anki"
 # CLI for building observable, production-ready distributed applications
