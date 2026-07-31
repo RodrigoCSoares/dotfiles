@@ -50,7 +50,7 @@ brew "cookiecutter"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Text processing system for reStructuredText
