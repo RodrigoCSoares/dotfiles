@@ -55,6 +55,8 @@ brew "docker"
 brew "docker-compose"
 # Text processing system for reStructuredText
 brew "docutils"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
