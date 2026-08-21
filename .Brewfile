@@ -14,13 +14,13 @@ tap "microsoft/aspire"
 tap "nikitabobko/tap"
 tap "shivammathur/php"
 # Official Amazon AWS command-line interface
-brew "awscli"
+brew "awscli", link: false
 # Thin wrapper around the `aws` command-line interface for use with LocalStack
 brew "awscli-local"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Stream processor for mundane tasks written in Go
-brew "benthos"
+brew "benthos", link: false
 # Switch Apache / Valet / CLI configs between PHP versions
 brew "brew-php-switcher"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -62,7 +62,7 @@ brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
-brew "gh"
+brew "gh", link: false
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Open-source, cross-platform JavaScript runtime environment
@@ -116,7 +116,7 @@ brew "neovim"
 # Retrieves currently playing media, and simulates media actions
 brew "nowplaying-cli"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama", restart_service: :changed, link: false
 # SDK for building Kubernetes applications
 brew "operator-sdk"
 # General-purpose scripting language
@@ -156,7 +156,7 @@ brew "uv"
 # JavaScript package manager
 brew "yarn"
 # The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode", trusted: true
+brew "anomalyco/tap/opencode", link: false, trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Browse, search and analyse your past AI coding sessions
@@ -213,7 +213,6 @@ cask "upscayl"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
 npm "@github/copilot"
 npm "cclsp"
