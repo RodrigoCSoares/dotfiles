@@ -14,7 +14,7 @@ tap "microsoft/aspire"
 tap "nikitabobko/tap"
 tap "shivammathur/php"
 # Official Amazon AWS command-line interface
-brew "awscli", link: false
+brew "awscli"
 # Thin wrapper around the `aws` command-line interface for use with LocalStack
 brew "awscli-local"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -156,7 +156,7 @@ brew "uv"
 # JavaScript package manager
 brew "yarn"
 # The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode", link: false, trusted: true
+brew "anomalyco/tap/opencode", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Browse, search and analyse your past AI coding sessions
