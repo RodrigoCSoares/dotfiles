@@ -116,7 +116,7 @@ brew "neovim"
 # Retrieves currently playing media, and simulates media actions
 brew "nowplaying-cli"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed, link: false
+brew "ollama", restart_service: :changed
 # SDK for building Kubernetes applications
 brew "operator-sdk"
 # General-purpose scripting language
