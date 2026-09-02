@@ -62,7 +62,7 @@ brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
-brew "gh", link: false
+brew "gh"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Open-source, cross-platform JavaScript runtime environment
@@ -213,6 +213,7 @@ cask "upscayl"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
 npm "@github/copilot"
 npm "cclsp"
