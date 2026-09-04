@@ -20,7 +20,7 @@ brew "awscli-local"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Stream processor for mundane tasks written in Go
-brew "benthos", link: false
+brew "benthos"
 # Switch Apache / Valet / CLI configs between PHP versions
 brew "brew-php-switcher"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
