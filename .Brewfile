@@ -218,3 +218,4 @@ cargo "openapi-tui"
 npm "@github/copilot"
 npm "cclsp"
 
+
