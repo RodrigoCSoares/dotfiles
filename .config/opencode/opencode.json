@@ -17,7 +17,690 @@
         },
         "second_constantine/deepseek-coder-v2:16b": {
           "name": "second_constantine/deepseek-coder-v2:16b",
-          "tools": true 
+          "tools": true
+        }
+      }
+    },
+    "jet-planner": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Lumen (Planner)",
+      "options": {
+        "baseURL": "https://lumengateway.production.jet-internal.com",
+        "apiKey": "{env:PLANNER_KEY}",
+        "isWorkContextRequired": true
+      },
+      "models": {
+        "deepseek-flash-default": {
+          "name": "deepseek-flash-default",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-v4p1-flash": {
+          "name": "deepseek-v4p1-flash",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "default-planner": {
+          "name": "default-planner",
+          "cost": {
+            "input": 3,
+            "output": 15,
+            "cache_read": 0.3
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "glm-5p3": {
+          "name": "glm-5p3",
+          "cost": {
+            "input": 1.4,
+            "output": 4.4,
+            "cache_read": 0.26
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 262144
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": false
+        },
+        "glm-5p3-flash": {
+          "name": "glm-5p3-flash",
+          "cost": {
+            "input": 0.15,
+            "output": 0.5,
+            "cache_read": 0.03
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kimi-k3": {
+          "name": "kimi-k3",
+          "cost": {
+            "input": 3,
+            "output": 15,
+            "cache_read": 0.3
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "minimax-m3": {
+          "name": "minimax-m3",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.06
+          },
+          "limit": {
+            "context": 512000,
+            "output": 512000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    },
+    "jet-executor": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Lumen (Executor)",
+      "options": {
+        "baseURL": "https://lumengateway.production.jet-internal.com",
+        "apiKey": "{env:EXECUTOR_KEY}",
+        "isWorkContextRequired": true
+      },
+      "models": {
+        "deepseek-flash-default": {
+          "name": "deepseek-flash-default",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-v4p1-flash": {
+          "name": "deepseek-v4p1-flash",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "default-executor": {
+          "name": "default-executor",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "glm-5p3": {
+          "name": "glm-5p3",
+          "cost": {
+            "input": 1.4,
+            "output": 4.4,
+            "cache_read": 0.26
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 262144
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": false
+        },
+        "glm-5p3-flash": {
+          "name": "glm-5p3-flash",
+          "cost": {
+            "input": 0.15,
+            "output": 0.5,
+            "cache_read": 0.03
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gpt-oss-120b": {
+          "name": "gpt-oss-120b",
+          "cost": {
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.015
+          },
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            }
+          },
+          "tool_call": true,
+          "attachment": false
+        },
+        "minimax-m3": {
+          "name": "minimax-m3",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.06
+          },
+          "limit": {
+            "context": 512000,
+            "output": 512000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    },
+    "jet-playground": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Lumen (Playground)",
+      "options": {
+        "baseURL": "https://lumengateway.production.jet-internal.com",
+        "apiKey": "{env:PLAYGROUND_KEY}",
+        "isWorkContextRequired": false
+      },
+      "models": {
+        "deepseek-flash-default": {
+          "name": "deepseek-flash-default",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-v4p1-flash": {
+          "name": "deepseek-v4p1-flash",
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cache_read": 0.007
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "default-playground": {
+          "name": "default-playground",
+          "cost": {
+            "input": 0.15,
+            "output": 0.5,
+            "cache_read": 0.03
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "glm-5p3-flash": {
+          "name": "glm-5p3-flash",
+          "cost": {
+            "input": 0.15,
+            "output": 0.5,
+            "cache_read": 0.03
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gpt-oss-120b": {
+          "name": "gpt-oss-120b",
+          "cost": {
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.015
+          },
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            }
+          },
+          "tool_call": true,
+          "attachment": false
+        },
+        "minimax-m3": {
+          "name": "minimax-m3",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.06
+          },
+          "limit": {
+            "context": 512000,
+            "output": 512000
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         }
       }
     }
@@ -101,5 +784,12 @@
       ]
     }
   },
-  "plugin": []
+  "plugin": [
+    "@jet-ai-platform/lumen-opencode-plugin@0.1.11"
+  ],
+  "enabled_providers": [
+    "jet-planner",
+    "jet-executor",
+    "jet-playground"
+  ]
 }

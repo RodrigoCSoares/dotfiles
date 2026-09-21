@@ -157,3 +157,20 @@ vault-env() {
 
 # Refresh Google Cloud ADC token for BigQuery MCP
 # export GCLOUD_ACCESS_TOKEN=$(gcloud auth application-default print-access-token 2>/dev/null)
+
+# jetdev
+export JD_HOME="${JD_HOME:-$HOME/.jetdev}"
+[[ -d "$JD_HOME/bin" ]] && export PATH="$JD_HOME/bin:$PATH"
+
+
+# jetdev completions
+if [[ -x "$JD_HOME/bin/jetdev" || -x "$JD_HOME/bin/jd" ]]; then
+	(( $+functions[compdef] )) || { autoload -Uz compinit && compinit }
+	[[ -f "$JD_HOME/completions/jetdev.zsh" ]] && source "$JD_HOME/completions/jetdev.zsh"
+	[[ -f "$JD_HOME/completions/jd.zsh" ]] && source "$JD_HOME/completions/jd.zsh"
+fi
+# >>> jetdev lumen >>>
+export PLANNER_KEY="sk-E6yJ2nvcl8r2knTVakKC7w"
+export EXECUTOR_KEY="sk-WPa7K3Qy_4K6xA0lEa2SKA"
+export PLAYGROUND_KEY="sk-_sMG6mzai8hDNTFn0UycRQ"
+# <<< jetdev lumen <<<
