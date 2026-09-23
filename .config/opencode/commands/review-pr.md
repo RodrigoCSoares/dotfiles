@@ -1,14 +1,18 @@
 ---
-description: Review a pull request using the project's REVIEWER.md guardrails. Checks out the branch, reads all referenced docs, explores changed files in full context, and confirms with you before posting comments. Usage: /review-pr [PR number]. If no argument given, uses the current branch's open PR.
-agent: pr-reviewer
+description: >-
+  Review a pull request using the project's REVIEWER.md guardrails. Checks out the
+  branch, reads all referenced docs, explores changed files in full context, and
+  confirms with you before posting comments. Usage: /review-pr [PR number]. If no
+  argument given, uses the current branch's open PR.
+agent: pr-review-assistant
 subtask: true
 ---
 
-Review the pull request: $ARGUMENTS
+Use the pr-review-assistant agent to review the pull request: $ARGUMENTS
 
 If no PR number is provided, detect and review the open PR for the current branch.
 
-Follow the full workflow defined in your system prompt:
+Follow the full workflow defined in the agent:
 1. Load REVIEWER.md and all referenced doc files
 2. Fetch PR metadata with gh
 3. Check out the PR branch with gh pr checkout
