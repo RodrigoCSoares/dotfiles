@@ -791,7 +791,7 @@
     }
   },
   "plugin": [
-    "@jet-ai-platform/lumen-opencode-plugin@0.1.11"
+    "@jet-ai-platform/lumen-opencode-plugin@0.1.13"
   ],
   "enabled_providers": [
     "jet-planner",
