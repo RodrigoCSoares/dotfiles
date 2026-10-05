@@ -135,6 +135,43 @@
             ]
           }
         },
+        "ember-1": {
+          "name": "ember-1",
+          "cost": {
+            "input": 3,
+            "output": 15,
+            "cache_read": 0.3
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "glm-5p3": {
           "name": "glm-5p3",
           "cost": {
@@ -181,6 +218,78 @@
             "max": {
               "reasoningEffort": "max"
             }
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gpt-5.6-luna": {
+          "name": "gpt-5.6-luna",
+          "cost": {
+            "input": 0.2,
+            "output": 1.2,
+            "cache_read": 0.02,
+            "cache_write": 0.25
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gpt-5.6-sol": {
+          "name": "gpt-5.6-sol",
+          "cost": {
+            "input": 4,
+            "output": 20,
+            "cache_read": 0.4,
+            "cache_write": 5
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gpt-5.6-terra": {
+          "name": "gpt-5.6-terra",
+          "cost": {
+            "input": 2,
+            "output": 12,
+            "cache_read": 0.2,
+            "cache_write": 2.5
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
           },
           "tool_call": true,
           "attachment": true,
@@ -254,16 +363,7 @@
             }
           },
           "tool_call": true,
-          "attachment": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
+          "attachment": false
         }
       }
     },
@@ -437,6 +537,30 @@
             ]
           }
         },
+        "gpt-5.6-luna": {
+          "name": "gpt-5.6-luna",
+          "cost": {
+            "input": 0.2,
+            "output": 1.2,
+            "cache_read": 0.02,
+            "cache_write": 0.25
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "gpt-oss-120b": {
           "name": "gpt-oss-120b",
           "cost": {
@@ -485,16 +609,7 @@
             }
           },
           "tool_call": true,
-          "attachment": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
+          "attachment": false
         }
       }
     },
@@ -643,6 +758,30 @@
             ]
           }
         },
+        "gpt-5.6-luna": {
+          "name": "gpt-5.6-luna",
+          "cost": {
+            "input": 0.2,
+            "output": 1.2,
+            "cache_read": 0.02,
+            "cache_write": 0.25
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "tool_call": true,
+          "attachment": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "gpt-oss-120b": {
           "name": "gpt-oss-120b",
           "cost": {
@@ -691,16 +830,7 @@
             }
           },
           "tool_call": true,
-          "attachment": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
+          "attachment": false
         }
       }
     }
