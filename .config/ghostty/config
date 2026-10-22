@@ -7,3 +7,5 @@ window-padding-x = 4
 
 # Automatically distribute any leftover pixels evenly across the edges
 window-padding-balance = true
+
+custom-shader = shaders/cursor_warp.glsl
