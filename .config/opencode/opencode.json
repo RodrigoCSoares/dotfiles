@@ -973,6 +973,6 @@
     "jet-playground"
   ],
   "plugins": [
-    "@jet-ai-platform/lumen-opencode2-plugin@0.1.13"
+    "@jet-ai-platform/lumen-opencode2-plugin@0.1.14"
   ]
 }
