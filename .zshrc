@@ -174,3 +174,9 @@ export PLANNER_KEY="sk-E6yJ2nvcl8r2knTVakKC7w"
 export EXECUTOR_KEY="sk-WPa7K3Qy_4K6xA0lEa2SKA"
 export PLAYGROUND_KEY="sk-_sMG6mzai8hDNTFn0UycRQ"
 # <<< jetdev lumen <<<
+
+# dotnetup: begin
+if [ -x '/Users/rodrigo.soares/.dotnetup/dotnetup' ]; then
+    eval "$('/Users/rodrigo.soares/.dotnetup/dotnetup' env script --shell zsh --dotnet --dotnetup)"
+fi
+# dotnetup: end
