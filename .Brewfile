@@ -173,7 +173,7 @@ cask "codex"
 cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
-cask "dotnet-sdk8-0-400"
+cask "isen-ng/dotnet-sdk-versions/dotnet-sdk8-0-400"
 cask "font-hack-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-sf-mono"
@@ -217,6 +217,7 @@ go "github.com/yayolande/go-template-lsp"
 cargo "openapi-tui"
 npm "@github/copilot"
 npm "cclsp"
+
 
 
 

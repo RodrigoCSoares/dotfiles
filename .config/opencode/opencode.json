@@ -944,7 +944,7 @@
   },
   "model": "jet-planner/glm-5p3",
   "small_model": "jet-playground/glm-5p3-flash",
-  "agent": {
+  "agents": {
     "plan": {
       "model": "jet-planner/default-planner"
     }
